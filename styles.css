@@ -1,0 +1,45 @@
+/*
+.monster{
+    width:600px;
+    height:338px;
+    border:1px solid red;
+    background: url('vertical.png') 0 0 no-repeat;
+    animation: play 3s steps(90) alternate infinite;
+    transform: translateZ(0);
+    overflow: hidden;
+}
+
+
+@keyframes play {
+    100% { background-position-y: -31320px; }
+}
+
+*/
+
+.monster2{
+    width:600px;
+    height:338px;
+    transform: translateZ(0);
+    overflow: hidden;
+    background: linear-gradient(#2980b9 0%, #2c3e50 80%) top;
+}
+
+.monster2 img.sprite{
+    animation: play2 3s steps(90) alternate infinite;
+}
+
+.monster2 img.fog{
+    position:absolute;
+    z-index:10;
+    bottom:0px;
+    animation: play 5s alternate infinite;
+}
+
+@keyframes play2 {
+    100% { transform: translateY(-31320px); }
+}
+
+@keyframes play {
+    100% { transform: translateX(-200px);
+        opacity:0.5;}
+}
