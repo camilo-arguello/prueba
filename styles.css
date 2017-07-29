@@ -19,6 +19,7 @@
 .monster2{
     width:600px;
     height:338px;
+    position:relative;
     transform: translateZ(0);
     overflow: hidden;
     background: linear-gradient(#2980b9 0%, #2c3e50 80%) top;
@@ -32,7 +33,9 @@
     position:absolute;
     z-index:10;
     bottom:0px;
-    animation: play 5s alternate infinite;
+    width:150%;
+    opacity:0.8;
+    animation: play 8s alternate infinite;
 }
 
 @keyframes play2 {
@@ -40,6 +43,6 @@
 }
 
 @keyframes play {
-    100% { transform: translateX(-200px);
+    100% { transform: translateX(-300px);
         opacity:0.5;}
 }
